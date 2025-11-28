@@ -1,0 +1,131 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  background: transparent;
+}
+
+.leftGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.rightGroup {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.selectWrapper {
+  position: relative;
+}
+
+.select {
+  appearance: none;
+  padding: 8px 32px 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 120px;
+}
+
+.select:hover {
+  border-color: #ccc;
+}
+
+.select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.iconButton:hover {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.iconButton:active {
+  background: #eee;
+}
+
+/* Custom Dropdown */
+.dropdownButton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  min-width: 180px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 4px;
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 8px;
+  z-index: 10;
+  min-width: 200px;
+}
+
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  user-select: none;
+}
+
+.dropdownItem:hover {
+  background: #f5f5f5;
+}
+
+/* Dark mode overrides */
+:global(body[style*="background-color: rgb(26, 26, 26)"]) .select,
+:global(body[style*="background-color: rgb(26, 26, 26)"]) .iconButton,
+:global(body[style*="background-color: rgb(26, 26, 26)"]) .dropdownButton,
+:global(body[style*="background-color: rgb(26, 26, 26)"]) .dropdownMenu {
+  background: #333;
+  border-color: #555;
+  color: #eee;
+}
+
+:global(body[style*="background-color: rgb(26, 26, 26)"]) .dropdownItem:hover {
+  background: #444;
+}
