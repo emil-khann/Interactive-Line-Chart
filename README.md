@@ -1,5 +1,7 @@
 # Interactive Line Chart
 
+[Live Demo](https://emil-khann.github.io/Interactive-Line-Chart/)
+
 An interactive line chart application built with React, TypeScript, and Recharts to visualize A/B test statistics.
 
 ## Implemented Features
